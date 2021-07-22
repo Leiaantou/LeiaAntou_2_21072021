@@ -97,6 +97,10 @@ form label i{
     font-size: 15px;
     cursor: pointer;
 }
+
+.loupe{
+    visibility: hidden;
+}
 .titre_filtres{
     font-weight: bold;
     display: flex;
@@ -293,6 +297,7 @@ padding-left: 5px;
 /*section activités*/
 #section_activites h2{
     margin-left: 20px;
+    margin-bottom: 20px;
     
 }
 #section_activites{
@@ -386,4 +391,97 @@ padding-left: 5px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+ }
+/* petits écrans téléphones */
+
+ @media screen and (max-width: 768px){
+
+  
+    header{
+        flex-direction: column;
+    }
+
+    #menu{
+        justify-content: left;
+        flex-wrap: wrap-reverse;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+
+    main h2{
+        font-size: 1.3em;
+    }
+    .titre_filtres{
+        justify-content: left;
+    }
+    #liste_filtres{
+        flex-direction: column;
+    }
+
+    .filtres{
+        flex-wrap: wrap;
+    }
+
+    #information p{
+        width: 100%;
+        font-size: small;
+    }
+    .populaires{
+        border-radius: 0px;
+        margin: 0px;
+        padding: 0px;width: 100%;
+
+    }
+    #titre_pop{
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .soleil, .eau, .bleu{
+        margin-left: 0.3em;
+    }
+
+    #ligne1, #ligne2{
+        flex-direction: column;
+    }
+
+    .heberg{
+        background-color: white;
+        padding: 0px;
+    }
+    .photo_hebergement img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .activites{
+        flex-direction: column;
+        margin: 0px;
+        
+    }
+
+    .vieux_port img, .pomegues img, .frioul img, .calanques img, .notre_dame img, .longchamp img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .foot{
+        flex-direction: column;
+        margin-bottom: 30px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .foot1, .foot2, .foot3{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    #section_activites h4{
+        margin-left: 10px;
+    }
+ }
+/* tablettes */
+ @media screen and (min-width: 768px) and (max-width: 991px){
+
  }
