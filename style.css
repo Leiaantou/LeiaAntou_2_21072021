@@ -13,7 +13,8 @@
 /* Eléments principaux de la page */
 body{
     font-family: 'Raleway';
-    padding: 4px 30px 0px 30px;
+    width: 100%;
+    
 }
 
 a{
@@ -34,6 +35,9 @@ align-items: center;
     position: relative;
     display: flex;
     
+}
+#menunav{
+    display: flex;
 }
 
 #menu1{
@@ -100,18 +104,35 @@ form label i{
 
 .loupe{
     visibility: hidden;
-}
-.titre_filtres{
+    border: 1px solid #0065fc;
+    background-color: #0065fc;
+    color: white;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    margin-left: -110px;
 }
-#liste_filtres{
+
+#ligne_filtres{
     display: flex;
     margin-left: 10px 10px 10px 5px;
     padding: 20px 10px 20px 0px;
 }
+
+#titre_filtres{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#liste_filtres{
+    display: flex;
+}
+
+#eco_fam{
+    display: flex;
+}
+
 .filtres{
 display: flex;
 margin-left: 10px;
@@ -310,8 +331,8 @@ padding-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-right: -1em;
-    margin-left: -2.7em;
+    margin-right: -55px;
+    margin-left: -60px;
 }
 .pomegues_frioul, .notredame_longchamp{
     display: flex;
@@ -319,8 +340,11 @@ padding-left: 5px;
     justify-content: space-between;
 }
 .pomegues_frioul{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: -55px;
+    margin-left: -55px;
+}
+.notredame_longchamp{
+
 }
 .vieux_port img, .calanques img{
     width: 250px;
@@ -344,7 +368,6 @@ padding-left: 5px;
     border-top-right-radius: 10px;
 }
 .vieux_port, .pomegues, .frioul, .calanques, .notre_dame, .longchamp{
-    background-color: white;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
     border-radius: 10px;
@@ -396,41 +419,75 @@ padding-left: 5px;
 
  @media screen and (max-width: 768px){
 
-  
-    header{
-        flex-direction: column;
+    #logo{
+position: absolute;
+margin: 10px;
+    margin-top: -25px;
     }
 
     #menu{
-        justify-content: left;
+        justify-content: center;
         flex-wrap: wrap-reverse;
     }
+
+
+#menu3{
+    margin-left: 80%;
+    padding: 0;
+    margin-top: 20px;
+}
+h2{
+    margin-right: 10px;
+}
+
+#rechercher p{
+    font-size: smaller;
+}
+   
+#ville{
+    width: 56%;
+}
+    .button{
+visibility: hidden;
+    }
+
+    .loupe{
+visibility: visible;
+    }
+
     main{
         flex-direction: column-reverse;
     }
 
-    main h2{
-        font-size: 1.3em;
+   
+    #titre_filtres{
+        margin: 0px;
     }
-    .titre_filtres{
-        justify-content: left;
-    }
-    #liste_filtres{
+    #ligne_filtres{
         flex-direction: column;
     }
+#liste_filtres{
+    flex-wrap: wrap;
+}
 
-    .filtres{
-        flex-wrap: wrap;
-    }
-
+.filtres{
+    margin: 5px;
+}
+#information{
+    margin: 0px;
+}
     #information p{
         width: 100%;
         font-size: small;
     }
+    #lespluspop{
+        align-items: center;
+    }
     .populaires{
         border-radius: 0px;
-        margin: 0px;
-        padding: 0px;width: 100%;
+        padding: 0px;
+        width: 95%;
+        margin-left: 10px;
 
     }
     #titre_pop{
@@ -449,22 +506,38 @@ padding-left: 5px;
         background-color: white;
         padding: 0px;
     }
-    .photo_hebergement img{
-        width: 300px;
-        height: 150px;
+    
+    .cannebiere, .port, .mouettes, .mer, .panier, .amina{
+box-shadow: 5px 5px 5px #F2F2F2;
+border-radius: 10px;
+margin-bottom: 5px;
     }
 
+    .photo_hebergement img{
+        width: 100%;
+        height: 110px;
+    }
+   
+#section_activites h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
     .activites{
         flex-direction: column;
-        margin: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
         
     }
 
     .vieux_port img, .pomegues img, .frioul img, .calanques img, .notre_dame img, .longchamp img{
         width: 100%;
         height: 150px;
+        margin-top: 5px;
     }
 
+    .vieux_port, .pomegues, .frioul, .calanques, .notre_dame, .longchamp{
+        
+    }
     .foot{
         flex-direction: column;
         margin-bottom: 30px;
@@ -482,6 +555,105 @@ padding-left: 5px;
     }
  }
 /* tablettes */
- @media screen and (min-width: 768px) and (max-width: 991px){
+ @media all and (min-width: 768px) and (max-width: 991px){
+#menu{
+    width: 100%;
+    justify-content: space-between;
+}
 
+#menunav{
+
+}
+#menu1{
+    margin-left: 30px;
+}
+#menu2{
+    margin-left: 30px;
+}
+#menu3{
+    margin-left: 85%;
+}
+#rechercher p{
+    font-size: larger;
+}
+#information p{
+    font-size: larger;
+}
+#titre_pop{
+    justify-content: space-between;
+}
+#lespluspop{
+    flex-direction: row;
+    margin-left: 10px;
+}
+.populaires{
+border-radius: 10px;
+}
+.soleil, .eau, .bleu{
+    font-size: small;
+}
+.description_pop{
+    padding-right: 10px;
+}
+#lespluspop .etoiles{
+    padding-top: 0px;
+}
+.heberg{
+background-color: #f2f2f2;
+margin-top: 50px;
+    padding-top: 10px;
+}
+#ligne1, #ligne2{
+    flex-direction: row;
+}
+.cannebiere, .port, .mouettes, .mer, .panier, .amina{
+    width: 100%;
+}
+
+.activites{
+flex-direction: row;
+}
+.pomegues_frioul, .notredame_longchamp{
+    margin-left: 20px;
+    margin-right: -10px;
+    display: block;
+    align-self: center;
+}
+.vieux_port img, .calanques img{
+height: 300px;
+}
+.pomegues img{
+height: 150px;
+}
+
+.frioul img{
+height: 100px;
+}
+.frioul{
+
+}
+.notre_dame img, .longchamp img{
+    height: 120px;
+}
+.vieux_port, .pomegues, .frioul, .calanques, .notre_dame, .longchamp{
+  width: 85%;  
+}
+.foot{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foot2{
+    margin-right: 20px;
+}
+.foot3{
+    margin-right: 20px;
+}
+ }
+
+ /*grands écrans*/
+ @media screen and (min-width: 992px){
+     body{
+         width: 100%;
+     }
+   
  }
