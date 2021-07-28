@@ -101,8 +101,8 @@ form label {
     padding: 14px 17px;
     font-size: larger;
     background-color: #F2F2F2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .i.fas.fa-map-marker-alt {
@@ -133,8 +133,8 @@ form label {
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 17px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     width: 128px;
     height: 50px;
     margin-left: -4px;
@@ -261,7 +261,7 @@ main p {
 
 #hebergements {
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     margin-right: -21px;
 }
@@ -279,7 +279,7 @@ main p {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 1em;
     padding: 5px 5px 10px 5px;
 }
@@ -287,8 +287,8 @@ main p {
 .photo_hebergement img {
     width: 227px;
     height: 100px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
 }
 
@@ -315,7 +315,7 @@ main p {
 /*section populaires*/
 .populaires {
     background-color: #F2F2F2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -343,8 +343,8 @@ i.fas.fa-chart-line {
     height: 133px;
     width: 124px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .soleil,
@@ -352,7 +352,7 @@ i.fas.fa-chart-line {
 .bleu {
     display: flex;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 1em;
     padding: 5px 38px 5px 5px;
 }
@@ -403,40 +403,40 @@ i.fas.fa-chart-line {
     width: 295px;
     height: 379px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .large_photo img {
     width: 295px;
     height: 148px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .medium_photo img {
     width: 295px;
     height: 174px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .extrasmall_photo img {
     width: 295px;
     height: 108px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .small_photo img {
     width: 295px;
     height: 136px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .vieux_port,
@@ -446,7 +446,7 @@ i.fas.fa-chart-line {
 .notre_dame,
 .longchamp {
     box-shadow: 5px 5px 5px #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .pomegues {
