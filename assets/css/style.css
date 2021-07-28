@@ -1,113 +1,151 @@
 /* police personnalisée */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
 }
 
 /* Eléments principaux de la page */
-body{
+body {
     font-family: 'Raleway';
-    width: 100%; 
-    height: 100%;
+    max-width: 1350px;
+    margin: auto;
 }
 
-#bloc_page{
+#bloc_page {
     width: 100%;
 }
 
-a{
+a {
     color: black;
 }
 
 /*header*/
-header{
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    . margin-top: 30px;
 }
 
-#menu{
-    position: relative;
-    display: flex;       
+#logo {
+    margin-left: 26px;
+    margin-top: 40px;
 }
 
-#menunav{
-display: flex;
+#menu {
+    display: flex;
+    margin-top: 40px;
 }
 
-#menu1{
-    margin-right: 60px;
-    padding-top: 30px;
+#menunav {
+    display: flex;
 }
 
-#menu2{
-    margin-right: 60px;
-    padding-top: 30px;
+#menu1 {
+    margin-right: 56px;
 }
 
-#menu3{
-    margin-right: 60px;
-    padding-top: 30px;
+#menu2 {
+    margin-right: 54px;
 }
 
-#menu3 a{
+#menu3 {
+    margin-right: 17px;
+}
+
+#menu3 a {
     color: #0065fc;
 }
 
-#menu1 a:hover, #menu2 a:hover, #menu3 a:hover{
+#menu1 a {
     color: #0065fc;
-    text-shadow: 2px 2px 2px #deebff; 
+    text-shadow: 2px 2px 2px #deebff;
     border-top: 2px solid #0065fc;
-    padding-top: 30px;
+    padding-top: 45px;
 }
 
-#rechercher{
-    margin-top: 20px;
-    line-height: 30px;
-    margin-left: 25px;
+
+#menu2 a:hover,
+#menu3 a:hover {
+    color: #0065fc;
+    text-shadow: 2px 2px 2px #deebff;
+    border-top: 2px solid #0065fc;
+    padding-top: 45px;
 }
 
-form label i{
-    padding: 10px 0px 15px 15px;
-    margin-top: 10px;
-    width: 30px;
+h2 {
+    font-size: 1.3em;
+}
+
+.rechercher {
+    margin-left: 28px;
+    margin-top: 33px;
+}
+
+.rechercher p {
+    margin-top: -10px;
+    font-size: 0.9em;
+}
+
+form {
+    margin-left: 6px;
+}
+
+form label {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    padding: 14px 17px;
     font-size: larger;
     background-color: #F2F2F2;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;    
+    border-bottom-left-radius: 10px;
 }
 
-#ville{
-    height: 40px;
+.i.fas.fa-map-marker-alt {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#ville::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+#ville {
+    height: 50px;
     border: 1px solid #F2F2F2;
     border-right: transparent;
     border-left: transparent;
-    font-weight: bold;
-    color: black;
+    padding-left: 12px;
+    padding-right: 20px;
 }
 
-.button{
+.button {
     border: 1px solid #0065fc;
     background-color: #0065fc;
     color: white;
     font-family: 'Raleway';
     font-weight: bold;
+    font-size: 17px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 100px;
-    height: 40px;
+    width: 128px;
+    height: 50px;
+    margin-left: -4px;
 }
 
-.button:hover{
+.button:hover {
     font-size: 15px;
     cursor: pointer;
 }
 
-.loupe{
+.loupe {
     visibility: hidden;
     border: 1px solid #0065fc;
     background-color: #0065fc;
@@ -119,41 +157,42 @@ form label i{
     margin-left: -110px;
 }
 
-#ligne_filtres{
+#ligne_filtres {
     display: flex;
-    margin: 10px 10px 10px 5px;
+    margin: 8px 10px 21px 8px;
     padding: 20px 10px 20px 0px;
+    align-items: center;
 }
 
-#titre_filtres{
+#titre_filtres {
     font-weight: bold;
-    padding-top: 10px;
+    padding-right: 20px;
 }
 
-#liste_filtres{
+#liste_filtres {
     display: flex;
 }
 
-#eco_fam{
+#eco_fam {
     display: flex;
 }
 
-.filtres{
-display: flex;
-margin-left: 10px;
-margin-right: 10px;
-border: 1px solid #F2F2F2;
-border-radius: 25px;
-border-left: transparent;
-padding-right: 10px;
+.filtres {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    border-left: transparent;
+    padding-right: 10px;
 }
 
-.filtres:hover{
+.filtres:hover {
     box-shadow: 5px 5px 5px #0065fc;
     color: #0065fc;
 }
 
-.filtres i{
+.filtres i {
     color: #0065fc;
     border: 1px solid #deebff;
     background-color: #deebff;
@@ -165,240 +204,293 @@ padding-right: 10px;
     align-items: center;
 }
 
-.nom_filtre{
+.nom_filtre {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
-#information{
+#information {
     display: flex;
-    margin-left: 5px;
+    margin-left: 4px;
+    margin-bottom: 14px;
 }
 
-#information i{
+#information i {
     color: #0065fc;
-    border:1px solid #CCC;
+    border: 1px solid #CCC;
     border-radius: 50px;
-    width:20px;
-    height:20px;
+    width: 27px;
+    height: 27px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: -14px;
+    font-size: smaller;
 }
 
-#information p{
-    margin-left:10px;
+#information p {
+    margin-left: 10px;
 }
 
 /* Corps */
-main{
+main {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-main h2, h3{
-    margin-left: 20px;
+main h2,
+h3 {
+    margin-left: 16px;
 }
 
-#ligne1, #ligne2{
+main p {
+    font-size: 0.9em;
+}
+
+#ligne1,
+#ligne2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#hebergements{
+#hebergements {
     background-color: #F2F2F2;
     border-radius: 10px;
-    width: 67%;
+    padding: 20px;
+    margin-right: -21px;
 }
 
-.heberg h3:hover{
+.heberg h3:hover {
     text-decoration: underline;
 }
 
-.cannebiere, .port, .mouettes, .mer, .panier, .amina{
+.cannebiere,
+.port,
+.mouettes,
+.mer,
+.panier,
+.amina {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    margin: 1em; 
-    padding: 5px 5px 10px 5px;  
+    margin: 1em;
+    padding: 5px 5px 10px 5px;
 }
 
-.photo_hebergement img{
-    width: 220px;
+.photo_hebergement img {
+    width: 227px;
     height: 100px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-    object-fit: cover;  
+    border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
-.photo_hebergement, .description_hebergement, .etoiles{
+.description_hebergement,
+.etoiles {
     text-align: left;
-    line-height: 5px;
+    line-height: 3px;
+    padding-left: 10px;
 }
 
-.etoiles{
+.etoiles {
     display: flex;
+    font-size: smaller;
 }
 
-.bluestar{
+.bluestar {
     color: #0065FC;
 }
 
-.greystar{
+.greystar {
     color: #F2F2F2;
 }
 
 /*section populaires*/
-.populaires{
+.populaires {
     background-color: #F2F2F2;
     border-radius: 10px;
-    width: 31%;
+    padding: 20px;
 }
 
-#titre_pop{
+#titre_pop {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 14px;
 }
 
-#lespluspop{
+i.fas.fa-chart-line {
+    font-size: x-large;
+}
+
+#lespluspop {
     display: flex;
     flex-direction: column;
 }
 
-.photo_pop{
+.photo_pop {
     display: flex;
 }
 
-.photo_pop img{
-    height: 120px;
-    width: 120px;
+.photo_pop img {
+    height: 133px;
+    width: 124px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.soleil, .eau, .bleu{
+.soleil,
+.eau,
+.bleu {
     display: flex;
     background-color: white;
-    width: 19em;
     border-radius: 10px;
     margin: 1em;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 38px 5px 5px;
 }
 
-.description_pop{
-display: flex;
-flex-direction: column;
-padding-left: 5px;
-margin-top: -10px;
+.description_pop {
+    display: flex;
+    flex-direction: column;
+    padding-left: 19px;
+    padding-right: 11px;
+    margin-top: -10px;
 }
 
-.description_pop p{
+.description_pop p {
     margin-top: -15px;
     margin-bottom: 20px;
 }
 
-/*section activités*/
-#section_activites h2{
-    margin-left: 20px;
-    margin-bottom: 20px;   
+.description_pop .etoiles {
+    margin-top: 18px;
 }
 
-#section_activites{
-    margin-top: 40px;
+/*section activités*/
+#section_activites h2 {
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 
-.activites{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#section_activites {
+    margin-top: 56px;
+    margin-bottom: 52px;
 }
 
-.pomegues_frioul, .notredame_longchamp{
+.activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 29px;
+}
+
+.pomegues_frioul,
+.notredame_longchamp {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.big_photo img{
-    width: 250px;
-    height: 350px;
+.big_photo img {
+    width: 295px;
+    height: 379px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.medium_photo img{
-    width: 250px;
-    height: 150px;
+.large_photo img {
+    width: 295px;
+    height: 148px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.extrasmall_photo img{
-    width: 250px;
-    height: 100px;
+.medium_photo img {
+    width: 295px;
+    height: 174px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.small_photo img{
-    width: 250px;
-    height: 120px;
+.extrasmall_photo img {
+    width: 295px;
+    height: 108px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.vieux_port, .pomegues, .frioul, .calanques, .notre_dame, .longchamp{
+.small_photo img {
+    width: 295px;
+    height: 136px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.vieux_port,
+.pomegues,
+.frioul,
+.calanques,
+.notre_dame,
+.longchamp {
     box-shadow: 5px 5px 5px #f2f2f2;
     border-radius: 10px;
 }
 
-.pomegues{
-    margin-bottom: 20px;
+.pomegues {
+    margin-bottom: 38px;
+}
+
+#section_activites h4 {
+    padding-left: 20px;
+    margin-bottom: 13px;
+    margin-top: 16px;
 }
 
 /* Footer */
-.foot{
-    display:flex;
-    background-color:#F2F2F2;
-    line-height:30px;   
+.foot {
+    display: flex;
+    background-color: #F2F2F2;
+    line-height: 30px;
+    margin-left: -22px;
+    margin-right: -22px;
 }
 
- .foot1{
-    margin-left:30px;
-    margin-right:300px;
-    margin-top:20px;
- }   
+.foot1 {
+    margin-left: -2px;
+    margin-top: 20px;
+}
 
- .foot2{
-    margin-right:300px;
-    margin-top:20px; 
- }
+.foot2 {
+    margin-left: 175px;
+    margin-top: 20px;
+}
 
- .foot3{
-     margin-top: 20px;
- }
+.foot3 {
+    margin-top: 20px;
+    margin-left: 245px;
+}
 
- .foot h3 {
+.foot h3 {
     margin-left: 40px;
     font-weight: bold;
- }
+}
 
 
 
- /********** petits écrans téléphones **********/
+/********** petits écrans téléphones 
 
  @media all and (max-width: 768px){
 
@@ -563,9 +655,9 @@ main{
 }
 }
 
+*/
 
-
- /********** tablettes **********/
+/********** tablettes **********
  @media all and (min-width: 768px) and (max-width: 991px){
     
 #logo{
@@ -672,9 +764,9 @@ main{
 }
 }
  
+*/
 
-
-/********** Ordinateurs **********/
+/********** Ordinateurs *********
 @media all and (min-width: 991px) and (max-width: 1199px){
 
 main{
@@ -766,3 +858,4 @@ main{
     margin-right: 50px;
 }
 }
+*/
