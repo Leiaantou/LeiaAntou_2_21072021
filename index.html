@@ -19,13 +19,26 @@
             </div>
 
             <!--menu-->
-            <div id="menu">
-                <nav id="menunav">
-                    <div id="menu1"><a href="#hebergements">Hébergements</a></div>
-                    <div id="menu2"><a href="#section_activites">Activités</a></div>
-                </nav>
-                <div id="menu3"><a href="#"><strong>S'inscrire</strong></a></div>
-            </div>
+            <nav id="menu">
+                <ul>
+                    <li class="menu1">
+                        <a href="#hebergements">
+                            <span>Hébergements</span>
+                        </a>
+                    </li>
+                    <li class="menu2">
+                        <a href="#section_activites">
+                            <span>Activités</span>
+                        </a>
+                    </li>
+                    <li class="menu3">
+                        <a href="#">
+                            <strong><span>S'inscrire</span></strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </header>
 
         <section class="rechercher">
@@ -36,50 +49,50 @@
             <form action="#">
                 <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
                 <input type="text" name="ville" id="ville" maxlength="20" placeholder="Marseille, France" />
-                <input type="submit" class="button" value="Rechercher" />
-                <button type="submit" class="loupe"><i class="fas fa-search"></i> </button>
+                <button><i class="fas fa-search"></i><span class="search">Rechercher</span></button>
             </form>
 
             <!--filtres-->
             <div id="ligne_filtres">
                 <div id="titre_filtres">Filtres</div>
                 <div id="liste_filtres">
+                    <ul>
+                        <li>
+                            <a href="#" class="filtres">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span class="nom_filtre">Economique</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filtres">
+                                <i class="fas fa-child"></i>
+                                <span class="nom_filtre">Familial</span>
 
-                    <a href="#">
-                        <div class="filtres">
-                            <div><i class="fas fa-money-bill-wave"></i></div>
-                            <div class="nom_filtre">Economique</div>
-                        </div>
-                    </a>
+                            </a>
+                        </li>
 
-                    <a href="#">
-                        <div class="filtres">
-                            <div><i class="fas fa-child"></i></div>
-                            <div class="nom_filtre">Familial</div>
-                        </div>
-                    </a>
+                        <li>
+                            <a href="#" class="filtres">
+                                <i class="fas fa-heart"></i>
+                                <span class="nom_filtre">Romantique</span>
 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filtres">
+                                <i class="fas fa-dog"></i>
+                                <span class="nom_filtre">Animaux autorisés</span>
 
-                    <a href="#">
-                        <div class="filtres">
-                            <div><i class="fas fa-heart"></i></div>
-                            <div class="nom_filtre">Romantique</div>
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="filtres">
-                            <div><i class="fas fa-dog"></i></div>
-                            <div class="nom_filtre">Animaux autorisés</div>
-                        </div>
-                    </a>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <!--information-->
             <div id="information">
                 <i class="fas fa-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
 
         </section>
