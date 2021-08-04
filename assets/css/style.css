@@ -210,8 +210,11 @@ button:hover {
 }
 
 #information {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: 11px;
+    justify-content: flex-start;
 }
 
 #information i {
@@ -485,9 +488,12 @@ i.fas.fa-chart-line {
 /********** Ecrans de téléphone *********/
 
 @media all and (max-width: 425px) {
+    body {
+        padding-right: 40px;
+    }
+
     header {
         flex-wrap: wrap;
-        padding-right: 40px;
     }
 
     #logo {
@@ -531,7 +537,7 @@ i.fas.fa-chart-line {
     }
 
     h2 {
-        width: 87%;
+
         margin-left: 10px;
     }
 
@@ -588,14 +594,12 @@ i.fas.fa-chart-line {
     }
 
     #information {
-        display: flex;
-        margin-left: 10px;
         margin-bottom: 30px;
-        width: 87%;
+        align-items: flex-start;
     }
 
     #information i {
-        height: 22px;
+        height: 23px;
         width: 30px;
     }
 
@@ -610,15 +614,12 @@ i.fas.fa-chart-line {
         flex-direction: column-reverse;
     }
 
-    #titre_pop {
-        margin-right: 0;
-        width: 85%;
-    }
 
     .populaires {
         border-radius: 0;
         padding: 0px;
         margin-bottom: 20px;
+        margin-right: 10px;
     }
 
     .soleil,
@@ -626,14 +627,17 @@ i.fas.fa-chart-line {
     .bleu {
         margin-bottom: 0;
         padding: 5px 0 5px 5px;
-        width: 81%;
     }
 
     #lespluspop {
         margin-bottom: 30px;
     }
 
-   #hebergements h2 {
+    .description_pop {
+        padding-right: 0;
+    }
+
+    #hebergements h2 {
         margin-left: 0;
     }
 
@@ -657,7 +661,6 @@ i.fas.fa-chart-line {
         box-shadow: 5px 5px 5px #f2f2f2;
         margin: 0;
         margin-bottom: 20px;
-        width: 90%;
     }
 
     .photo_hebergement img {
@@ -672,7 +675,6 @@ i.fas.fa-chart-line {
     .activites {
         flex-direction: column;
         padding: 0 20px;
-        width: 90%;
     }
 
     .big_photo img,
