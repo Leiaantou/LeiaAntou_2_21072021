@@ -33,10 +33,13 @@ header {
 #logo {
     margin-left: 26px;
     margin-top: 40px;
+    flex: 1;
 }
-nav ul{
+
+nav ul {
     display: inline-flex;
 }
+
 .menu {
     display: flex;
     margin-top: 40px;
@@ -58,7 +61,7 @@ nav ul{
     color: #0065fc;
 }
 
-.menu1 span  {
+.menu1 span {
     color: #0065fc;
     text-shadow: 2px 2px 2px #deebff;
     border-top: 2px solid #0065fc;
@@ -174,7 +177,7 @@ button:hover {
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 25px;
     border-left: transparent;
     padding-right: 8px;
@@ -284,7 +287,7 @@ main p {
 }
 
 .description_hebergement,
-.etoiles {
+#hebergements .etoiles {
     text-align: left;
     line-height: 3px;
     padding-left: 10px;
@@ -479,21 +482,70 @@ i.fas.fa-chart-line {
     font-weight: bold;
 }
 
-/********** Petits écrans de téléphone **********/
+/********** Ecrans de téléphone *********/
 
 @media all and (max-width: 425px) {
-    header {}
+    header {
+        flex-wrap: wrap;
+        padding-right: 40px;
+    }
 
-   
+    #logo {
+        margin-left: 10px;
+    }
 
-    #logo {}
+    #menu span {
+        border-top: none;
+    }
 
-    #menu {}
+    ul {
+        order: 2;
+    }
 
-    #menunav {}
+    nav#menu {
+        order: 3;
+        width: 100%;
+    }
+
+    nav#menu ul li {
+        border-bottom: 2px solid #f2f2f2;
+        margin: 0;
+        padding: 10px 20px;
+        flex: 1;
+        text-align: center;
+    }
+
+    nav ul {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #menu ul li.active {
+        border-bottom: 2px solid #0065fc;
+    }
+
+
+    .rechercher {
+        margin-left: 0;
+    }
+
+    h2 {
+        width: 87%;
+        margin-left: 10px;
+    }
+
+    .rechercher p {
+        margin-left: 10px;
+        font-size: 0.95em;
+    }
+
+    form label {
+        margin-left: 5px;
+    }
 
     #ville {
-        width: 67%;
+        width: 61%;
     }
 
 
@@ -513,13 +565,16 @@ i.fas.fa-chart-line {
 
     #titre_filtres {
         padding-bottom: 14px;
+        margin-left: 14px;
     }
+
 
     #ligne_filtres {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin: 15px 0 10px
     }
 
     #liste_filtres ul {
@@ -528,243 +583,127 @@ i.fas.fa-chart-line {
 
     .filtres {
         margin-bottom: 15px;
+        margin-right: 0;
+        padding-right: 0;
     }
 
     #information {
         display: flex;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        width: 87%;
     }
 
     #information i {
-        width: 36px;
+        height: 22px;
+        width: 30px;
     }
 
+
     #information span {
-        font-size: large;
+        font-size: 0.9em;
+        padding-top: 3px;
     }
 
 
     main {
         flex-direction: column-reverse;
+    }
+
+    #titre_pop {
+        margin-right: 0;
+        width: 85%;
     }
 
     .populaires {
         border-radius: 0;
-    }
-
-    #hebergements {
-        background-color: white;
-    }
-
-    #ligne1,
-    #ligne2 {
-        flex-direction: column;
-    }
-
-    .photo_hebergement img {
-        width: 100%;
-        height: 122px;
-    }
-
-    .activites {
-        flex-direction: column;
-    }
-
-    .big_photo img,
-    .medium_photo img,
-    .large_photo img,
-    .small_photo img,
-    .extrasmall_photo img {
-        width: 100%;
-        height: 130px;
-    }
-
-    .vieux_port,
-    .pomegues,
-    .frioul,
-    .calanques,
-    .notre_dame,
-    .longchamp {
+        padding: 0px;
         margin-bottom: 20px;
     }
 
-    .foot {
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .foot2 {
-        margin-left: 0;
-    }
-
-    .foot3 {
-        margin-left: 0;
-    }
-}
-
-/********** Téléphones **********/
-
-@media all and (min-width: 426px) and (max-width: 768px) {
-
-
-   
-    #ville {
-        width: 67%;
-    }
-
-
-    button {
-        border-radius: 15px;
-        padding: 16px 17px;
-        margin-left: -11px;
-    }
-
-    i.fas.fa-search {
-        display: contents;
-    }
-
-    .search {
-        display: none;
-    }
-
-    #titre_filtres {
-        padding-bottom: 14px;
-    }
-
-    #ligne_filtres {}
-
-    #liste_filtres ul {}
-
-    .filtres {
-        margin-bottom: 15px;
-    }
-
-    #information {
-        display: flex;
-    }
-
-    #information i {
-        width: 36px;
-    }
-
-    #information span {
-        font-size: large;
-    }
-
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    .populaires {
-        border-radius: 0;
-    }
-
-    #hebergements {
-        background-color: white;
-    }
-
-    #ligne1,
-    #ligne2 {
-        flex-direction: column;
-    }
-
-    .photo_hebergement img {
-        width: 100%;
-        height: 122px;
-    }
-
-    .activites {
-        flex-direction: column;
-    }
-
-    .big_photo img,
-    .medium_photo img,
-    .large_photo img,
-    .small_photo img,
-    .extrasmall_photo img {
-        width: 100%;
-        height: 130px;
-    }
-
-    .vieux_port,
-    .pomegues,
-    .frioul,
-    .calanques,
-    .notre_dame,
-    .longchamp {
-        margin-bottom: 20px;
-    }
-
-    .foot {
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .foot2 {
-        margin-left: 0;
-    }
-
-    .foot3 {
-        margin-left: 0;
-    }
-
-}
-
-/********** Tablettes **********/
-@media all and (min-width: 769px) and (max-width: 991px) {
-
-    #ligne_filtres {
-        flex-wrap: wrap;
-    }
-
-    #liste_filtres {
-        padding-top: 10px;
-    }
-
-    main {
-        flex-direction: column-reverse;
+    .soleil,
+    .eau,
+    .bleu {
+        margin-bottom: 0;
+        padding: 5px 0 5px 5px;
+        width: 81%;
     }
 
     #lespluspop {
-        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+   #hebergements h2 {
+        margin-left: 0;
+    }
+
+    #hebergements {
+        background-color: white;
+        margin-right: 0;
+        padding: 0 20px;
     }
 
     #ligne1,
-    #ligne2 {}
-
-    .photo_hebergement img {
-        width: 200px;
+    #ligne2 {
+        flex-direction: column;
     }
 
-    .activites {}
+    .cannebiere,
+    .port,
+    .mouettes,
+    .mer,
+    .panier,
+    .amina {
+        box-shadow: 5px 5px 5px #f2f2f2;
+        margin: 0;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .photo_hebergement img {
+        width: 100%;
+        height: 122px;
+    }
+
+    #section_activites {
+        margin-bottom: 30px;
+    }
+
+    .activites {
+        flex-direction: column;
+        padding: 0 20px;
+        width: 90%;
+    }
 
     .big_photo img,
     .medium_photo img,
     .large_photo img,
     .small_photo img,
     .extrasmall_photo img {
-
+        width: 100%;
+        height: 130px;
     }
 
-    footer {
-        justify-content: space-between;
+    .vieux_port,
+    .pomegues,
+    .frioul,
+    .calanques,
+    .notre_dame,
+    .longchamp {
+        margin-bottom: 25px;
     }
 
-    .foot1,
-    .foot2,
-    .foot3 {
+    .foot {
+        flex-direction: column;
+        padding-left: 10px;
+        margin-right: 0;
+    }
+
+    .foot2 {
         margin-left: 0;
     }
 
-    .foot2,
     .foot3 {
-        margin-right: 36px;
+        margin-left: 0;
     }
 }
-
-
-
-
-
-/********** Ordinateurs **********/
-@media all and (min-width: 992px) and (max-width: 1199px) {}
