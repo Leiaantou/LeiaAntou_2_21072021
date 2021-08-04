@@ -151,9 +151,6 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
 #ligne_filtres {
     display: flex;
     margin: 8px 10px 21px 16px;
@@ -488,9 +485,6 @@ i.fas.fa-chart-line {
 /********** Ecrans de téléphone *********/
 
 @media all and (max-width: 425px) {
-    body {
-        padding-right: 40px;
-    }
 
     header {
         flex-wrap: wrap;
@@ -599,21 +593,16 @@ i.fas.fa-chart-line {
     }
 
     #information i {
-        height: 23px;
         width: 30px;
     }
 
-
     #information span {
-        font-size: 0.9em;
         padding-top: 3px;
     }
-
 
     main {
         flex-direction: column-reverse;
     }
-
 
     .populaires {
         border-radius: 0;
