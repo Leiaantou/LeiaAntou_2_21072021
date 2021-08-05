@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    . margin-top: 30px;
+    margin-top: 30px;
 }
 
 #logo {
@@ -47,10 +47,6 @@ nav ul {
 
 .menu1 {
     margin-right: 56px;
-}
-
-.menu2 {
-    margin-right: 54px;
 }
 
 .menu3 {
@@ -482,9 +478,11 @@ i.fas.fa-chart-line {
     font-weight: bold;
 }
 
-/********** Ecrans de téléphone *********/
 
-@media all and (max-width: 425px) {
+
+/* Téléphones */
+
+@media all and (max-width: 768px) {
 
     header {
         flex-wrap: wrap;
@@ -495,6 +493,11 @@ i.fas.fa-chart-line {
     }
 
     #menu span {
+        border-top: none;
+    }
+
+    .menu2 a:hover,
+    .menu3 a:hover {
         border-top: none;
     }
 
@@ -695,5 +698,103 @@ i.fas.fa-chart-line {
 
     .foot3 {
         margin-left: 0;
+    }
+}
+
+
+
+
+
+/* Tablettes */
+@media all and (min-width: 769px) and (max-width: 991px) {
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #lespluspop {
+        flex-direction: row;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 30px 20px;
+    }
+
+    .soleil,
+    .eau,
+    .bleu {
+        padding-right: 0;
+    }
+
+    .description_pop {
+        padding-right: 4px;
+        padding-left: 10px;
+    }
+
+    .description_pop .etoiles {
+        margin-top: 0;
+    }
+
+    #hebergements {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    #ligne1,
+    #ligne2 {
+        justify-content: flex-start;
+    }
+
+    .photo_hebergement img {
+        width: 275px;
+        height: 150px;
+    }
+
+    #section_activites {
+        width: 100%;
+    }
+
+    .pomegues_frioul,
+    .notredame_longchamp {
+        display: contents;
+    }
+
+    .activites {
+        flex-wrap: wrap;
+    }
+
+    .big_photo img,
+    .medium_photo img,
+    .large_photo img,
+    .small_photo img,
+    .extrasmall_photo img {
+        height: 175px;
+    }
+
+    .pomegues {
+        margin-bottom: 0;
+    }
+
+    .vieux_port,
+    .pomegues,
+    .frioul,
+    .calanques,
+    .notre_dame,
+    .longchamp {
+        margin-bottom: 30px;
+    }
+
+    .foot {
+        margin: 0;
+    }
+
+    .foot2 {
+        margin-left: 100px;
+    }
+
+    .foot3 {
+        margin-left: 130px;
     }
 }
