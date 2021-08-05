@@ -479,7 +479,7 @@ i.fas.fa-chart-line {
 
 
 /* Tablettes */
-@media all and (max-width: 1024px) and (min-width: 768px){
+@media all and (min-width: 768px) and (max-width: 1024px){
 
 
     #menu span {
@@ -490,7 +490,7 @@ i.fas.fa-chart-line {
     .menu3 a:hover {
         border-top: none;
     }
-    
+
     #ligne_filtres{
         align-items: baseline;
     }
