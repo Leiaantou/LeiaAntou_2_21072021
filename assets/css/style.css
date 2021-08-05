@@ -478,9 +478,145 @@ i.fas.fa-chart-line {
 
 
 
+/* Tablettes */
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+
+    #menu span {
+        border-top: none;
+    }
+
+    .menu2 a:hover,
+    .menu3 a:hover {
+        border-top: none;
+    }
+    
+    #ligne_filtres{
+        align-items: baseline;
+    }
+
+    #liste_filtres ul {
+        flex-wrap: wrap;
+    }
+
+    .filtres{
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #lespluspop {
+        flex-direction: row;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    #lespluspop{
+        justify-content: center;
+    }
+
+    .soleil,
+    .eau,
+    .bleu {
+        width: 95%;
+        padding: 5px;
+        margin: 0.5em;
+    }
+
+    .description_pop {
+        padding-right: 4px;
+        padding-left: 10px;
+    }
+
+    .description_pop .etoiles {
+        margin-top: -1px;
+    }
+
+    .soleil .etoiles, .bleu .etoiles{
+        padding-top: 13px;
+    }
+
+    #hebergements {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #ligne1,
+    #ligne2 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .cannebiere, .port, .mouettes, .mer, .panier, .amina{
+        margin: 0.5em;
+        padding: 5px;
+    }
+
+    .photo_hebergement img {
+        width: 227px;
+        height: 100px;
+    }
+
+    #section_activites {
+        width: 100%;
+    }
+
+    .pomegues_frioul,
+    .notredame_longchamp {
+        display: contents;
+    }
+
+    .activites {
+        flex-wrap: wrap;
+    }
+
+    .big_photo img,
+    .medium_photo img,
+    .large_photo img,
+    .small_photo img,
+    .extrasmall_photo img {
+        height: 175px;
+    }
+
+    .pomegues {
+        margin-bottom: 0;
+    }
+
+    .vieux_port,
+    .pomegues,
+    .frioul,
+    .calanques,
+    .notre_dame,
+    .longchamp {
+        margin-bottom: 30px;
+    }
+
+    .foot {
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .foot2 {
+        margin-left: 0;
+    }
+
+    .foot3 {
+        margin-left: 0;
+    }
+}
+
+
+
 /* Téléphones */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
 
     header {
         flex-wrap: wrap;
@@ -702,97 +838,3 @@ i.fas.fa-chart-line {
 
 
 
-
-/* Tablettes */
-@media all and (min-width: 769px) and (max-width: 991px){
-
-    main {
-        flex-direction: column-reverse;
-    }
-
-    #lespluspop {
-        flex-direction: row;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-bottom: 40px;
-        padding: 30px 20px;
-    }
-
-    .soleil,
-    .eau,
-    .bleu {
-        padding-right: 0;
-    }
-
-    .description_pop {
-        padding-right: 4px;
-        padding-left: 10px;
-    }
-
-    .description_pop .etoiles {
-        margin-top: 0;
-    }
-
-    #hebergements {
-        width: 100%;
-        padding: 30px 20px;
-    }
-
-    #ligne1,
-    #ligne2 {
-        justify-content: flex-start;
-    }
-
-    .photo_hebergement img {
-        width: 275px;
-        height: 150px;
-    }
-
-    #section_activites {
-        width: 100%;
-    }
-
-    .pomegues_frioul,
-    .notredame_longchamp {
-        display: contents;
-    }
-
-    .activites {
-        flex-wrap: wrap;
-    }
-
-    .big_photo img,
-    .medium_photo img,
-    .large_photo img,
-    .small_photo img,
-    .extrasmall_photo img {
-        height: 175px;
-    }
-
-    .pomegues {
-        margin-bottom: 0;
-    }
-
-    .vieux_port,
-    .pomegues,
-    .frioul,
-    .calanques,
-    .notre_dame,
-    .longchamp {
-        margin-bottom: 30px;
-    }
-
-    .foot {
-        margin: 0;
-    }
-
-    .foot2 {
-        margin-left: 100px;
-    }
-
-    .foot3 {
-        margin-left: 130px;
-    }
-}
