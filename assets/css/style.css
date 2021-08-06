@@ -479,7 +479,7 @@ i.fas.fa-chart-line {
 
 
 /* Tablettes */
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 768px) and (max-width: 1024px) {
 
 
     #menu span {
@@ -491,7 +491,7 @@ i.fas.fa-chart-line {
         border-top: none;
     }
 
-    #ligne_filtres{
+    #ligne_filtres {
         align-items: baseline;
     }
 
@@ -499,10 +499,11 @@ i.fas.fa-chart-line {
         flex-wrap: wrap;
     }
 
-    .filtres{
+    .filtres {
         padding-right: 0;
         margin-bottom: 10px;
     }
+
     main {
         flex-direction: column-reverse;
     }
@@ -517,7 +518,7 @@ i.fas.fa-chart-line {
         padding: 20px;
     }
 
-    #lespluspop{
+    #lespluspop {
         justify-content: center;
     }
 
@@ -532,7 +533,13 @@ i.fas.fa-chart-line {
     .description_pop {
         padding-right: 4px;
         padding-left: 10px;
+        font-size: smaller;
     }
+
+    .description_pop .etoiles {
+        margin-top: auto;
+    }
+
 
     #hebergements {
         width: 100%;
@@ -546,7 +553,12 @@ i.fas.fa-chart-line {
         justify-content: space-around;
     }
 
-    .cannebiere, .port, .mouettes, .mer, .panier, .amina{
+    .cannebiere,
+    .port,
+    .mouettes,
+    .mer,
+    .panier,
+    .amina {
         margin: 0.5em;
         padding: 5px;
     }
@@ -568,6 +580,7 @@ i.fas.fa-chart-line {
     .activites {
         flex-wrap: wrap;
         padding: 0 20px;
+        justify-content: space-around;
     }
 
     .big_photo img,
@@ -827,7 +840,3 @@ i.fas.fa-chart-line {
         margin-left: 0;
     }
 }
-
-
-
-
