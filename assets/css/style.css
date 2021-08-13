@@ -504,9 +504,16 @@ i.fas.fa-chart-line {
 
 
 /*Ordinateurs*/
+@media all and (min-width: 1239px) and (max-width: 1276px){
+
+    .description_pop{
+        padding-left: 13px;
+    }
+}
+
+
+
 @media all and (min-width: 1025px) and (max-width: 1238px){
-
-
 
     main{
 flex-direction: column-reverse;
@@ -672,6 +679,7 @@ flex-direction: column-reverse;
 
     .foot3 {
         margin-left: 0;
+        margin-right: 15px;
     }
 }
 
@@ -815,7 +823,7 @@ flex-direction: column-reverse;
     .eau,
     .bleu {
         margin-bottom: 0;
-        padding: 5px 0 5px 5px;
+        padding: 5px 15px 5px 5px;
     }
 
     #lespluspop {
@@ -823,7 +831,7 @@ flex-direction: column-reverse;
     }
 
     .description_pop {
-        padding-right: 0;
+        justify-content: space-around;
     }
 
     #hebergements h2 {
