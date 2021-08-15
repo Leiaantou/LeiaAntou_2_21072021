@@ -85,10 +85,6 @@ h2 {
     font-size: 0.9em;
 }
 
-form {
-    margin-left: 6px;
-}
-
 form label {
     display: inline-block;
     text-align: center;
@@ -227,8 +223,10 @@ button:hover {
 /* Corps */
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main h2,
@@ -508,10 +506,14 @@ i.fas.fa-chart-line {
 
 
 /*Ordinateurs*/
-@media all and (min-width: 1239px) and (max-width: 1276px){
+@media all and (min-width: 1239px) and (max-width: 1315px){
 
     .description_pop{
         padding-left: 13px;
+    }
+
+    .description_pop p{
+        overflow: visible;
     }
 }
 
@@ -836,6 +838,9 @@ flex-direction: column-reverse;
         justify-content: space-around;
     }
 
+    .description_pop p{
+        overflow: visible;
+    }
 
 
     #hebergements h2 {
