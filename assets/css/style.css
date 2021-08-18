@@ -159,7 +159,6 @@ button:hover {
     padding: 0;
 }
 
-
 .filtres {
     display: flex;
     margin-left: 10px;
@@ -256,7 +255,8 @@ main p {
     text-decoration: underline;
 }
 
-div#ligne1 > div, div#ligne2 > div {
+div#ligne1>div,
+div#ligne2>div {
     flex: 1;
 }
 
@@ -480,8 +480,6 @@ i.fas.fa-chart-line {
     display: flex;
     background-color: #F2F2F2;
     line-height: 30px;
-    margin-left: -22px;
-    margin-right: -22px;
 }
 
 .foot1 {
@@ -506,35 +504,35 @@ i.fas.fa-chart-line {
 
 
 /*Ordinateurs*/
-@media all and (min-width: 1239px) and (max-width: 1315px){
+@media all and (min-width: 1239px) and (max-width: 1315px) {
 
-    .description_pop{
+    .description_pop {
         padding-left: 13px;
     }
 
-    .description_pop p{
+    .description_pop p {
         overflow: visible;
     }
 }
 
 
 
-@media all and (min-width: 1025px) and (max-width: 1238px){
+@media all and (min-width: 1025px) and (max-width: 1238px) {
 
-    main{
-flex-direction: column-reverse;
+    main {
+        flex-direction: column-reverse;
     }
 
-    .populaires{
+    .populaires {
         width: 100%;
         margin-bottom: 40px;
     }
 
-    #hebergements{
+    #hebergements {
         width: 100%;
     }
 
-    .activites{
+    .activites {
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -637,6 +635,10 @@ flex-direction: column-reverse;
 
     #section_activites {
         width: 100%;
+    }
+
+    #section_activites h2 {
+        margin-left: 50px;
     }
 
     .pomegues_frioul,
@@ -838,7 +840,7 @@ flex-direction: column-reverse;
         justify-content: space-around;
     }
 
-    .description_pop p{
+    .description_pop p {
         overflow: visible;
     }
 
